@@ -5,6 +5,8 @@
 ### New features
 
 * Python API `crash_limit` now accepts `"unlimited"` and `"never-restart"` (and `0` is rejected)
+* New commands `hq worker drain` and `hq worker undrain`. A drained worker does not receive new tasks, but it finishes
+  the tasks that it is already computing. With `--stop-when-idle`, the worker is stopped once all its tasks are finished.
 
 ## Fixes
 
